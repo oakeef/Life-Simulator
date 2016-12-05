@@ -1,0 +1,4 @@
+﻿  City.cpp
+d:\documents\visual studio 2015\projects\game-of-life\game-of-life\city.cpp(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Game-of-Life.vcxproj -> D:\Documents\Visual Studio 2015\Projects\Game-of-Life\Debug\Game-of-Life.exe
+  Game-of-Life.vcxproj -> D:\Documents\Visual Studio 2015\Projects\Game-of-Life\Debug\Game-of-Life.pdb (Partial PDB)

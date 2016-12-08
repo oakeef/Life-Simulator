@@ -11,9 +11,11 @@ public:
 	~Zombie();
 
 	void move();
-	void spawn();
+	bool spawn();
 
 private:
+	int hasEaten;
+	int zombieMoves[8][2] = { {-1,-1}, {0,-1}, {1,-1}, {-1,0}, {1,0}, {-1,1}, {0,1}, {1,1} };
 	void backToLife();
 };
 

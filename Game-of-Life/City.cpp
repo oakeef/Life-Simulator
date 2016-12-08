@@ -50,3 +50,16 @@ Organism* City::getOrganism(int x, int y) {
 	int position = x + (y * GRIDSIZE);
 	return grid[position];
 }
+
+void City::setOrganism(Organism* organism, int x, int y) {
+	if (inBounds(x,y)) {
+		int position = x + (y * GRIDSIZE);
+		grid[position] = organism;
+	}
+	
+}
+
+bool City::inBounds(int x, int y) {
+	return x >= 0 && y >= 0 && x < _width && y < _height;
+
+}

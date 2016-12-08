@@ -12,20 +12,25 @@ Organism::~Organism() {
 }
 
 void Organism::move() {
-	if (_city->getOrganism( (_x + 1) , _y ) == nullptr) {
 
+	for (int i = 0; i < (sizeof(moves)/sizeof(moves[0])); i++) {
+		int newX = _x + moves[i][0];
+		int newY = _y + moves[i][1];
+		if (_city->inBounds(newX, newY)) {
+			if (_city->getOrganism(newX, newY) == nullptr) {
+
+				_city->setOrganism(nullptr, _x, _y); //previous position is now NULL
+
+				_x = newX;
+				_y = newY;
+
+				_city->setOrganism(this, _x, _y);
+				hasMoved = true;
+				moveCount += 1;
+				break;
+			}//end if
+		}//end if
 		
-	}
-	else if (_city->getOrganism( (_x - 1), _y ) == nullptr) {
-	
-		
-	}
-	else if (_city->getOrganism(_x, ( _y + 1 ) ) == nullptr) {
-	
-		
-	}
-	else if (_city->getOrganism(_x, ( _y - 1 ) ) == nullptr) {
-	
-		
-	}
+	}//end for
+
 }

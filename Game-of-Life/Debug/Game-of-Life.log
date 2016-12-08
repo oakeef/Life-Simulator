@@ -1,3 +1,8 @@
 ﻿  Organism.cpp
-  Game-of-Life.vcxproj -> D:\Documents\GitHub\Life-Simulator\Debug\Game-of-Life.exe
-  Game-of-Life.vcxproj -> D:\Documents\GitHub\Life-Simulator\Debug\Game-of-Life.pdb (Partial PDB)
+  Game.cpp
+d:\evan\documents\github\life-simulator\game-of-life\game.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\evan\documents\github\life-simulator\game-of-life\game.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\evan\documents\github\life-simulator\game-of-life\game.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  Game-of-Life.vcxproj -> D:\Evan\Documents\GitHub\Life-Simulator\Debug\Game-of-Life.exe
+  Game-of-Life.vcxproj -> D:\Evan\Documents\GitHub\Life-Simulator\Debug\Game-of-Life.pdb (Partial PDB)

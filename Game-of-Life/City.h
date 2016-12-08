@@ -13,6 +13,7 @@ public:
 	void setOrganism( Organism* organism, int x, int y );
 
 	void day();
+	bool inBounds( int x, int y);
 
 
 private:

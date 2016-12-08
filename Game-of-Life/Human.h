@@ -9,8 +9,7 @@ public:
 	Human( City *city, int x, int y );
 	~Human();
 
-	void move();
-	void spawn();
+	bool spawn();
 };
 
 #endif

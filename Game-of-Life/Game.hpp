@@ -9,6 +9,10 @@ public:
 	Game();
 	void run();
 	void print();
+	int countHumans();
+	void resetMoves();
+	void moveOrganisms();
+	void spawnOrganisms();
 
 private:
 	City* city;

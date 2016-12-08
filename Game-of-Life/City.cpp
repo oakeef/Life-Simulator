@@ -3,6 +3,7 @@
 #include "Human.h"
 #include "GameSpecs.hpp"
 #include <stdlib.h>;
+#include <time.h>
 
 City::City(int width, int height) {
 	_width = width;
@@ -17,6 +18,7 @@ City::City(int width, int height) {
 	int placedZombies = 0;
 	int placedHumans = 0;
 
+	srand(time(NULL));
 	while (placedZombies < ZOMBIE_STARTCOUNT) {
 		//create random cooridantes
 		int randomX = (rand() % _width);

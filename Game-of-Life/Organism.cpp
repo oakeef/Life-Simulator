@@ -1,5 +1,7 @@
 #include "Organism.h"
 #include "City.h"
+#include <algorithm>
+#include <ctime>
 
 Organism::Organism(City* city, int x, int y) {
 	_city = city;
@@ -13,9 +15,13 @@ Organism::~Organism() {
 
 void Organism::move() {
 
-	for (int i = 0; i < (sizeof(moves)/sizeof(moves[0])); i++) {
-		int newX = _x + moves[i][0];
-		int newY = _y + moves[i][1];
+	//shuffle moves array
+	srand(time(NULL));
+	std::random_shuffle(std::begin(shuffledMoves), std::end(shuffledMoves));
+
+	for (int i = 0; i < (sizeof(shuffledMoves)/sizeof(shuffledMoves[0])); i++) {
+		int newX = _x + shuffledMoves[i][0];
+		int newY = _y + shuffledMoves[i][1];
 		if (_city->inBounds(newX, newY)) {
 			if (_city->getOrganism(newX, newY) == nullptr) {
 

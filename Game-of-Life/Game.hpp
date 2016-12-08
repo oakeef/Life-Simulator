@@ -10,9 +10,11 @@ public:
 	void run();
 	void print();
 	int countHumans();
+	int countZombies();
 	void resetMoves();
 	void moveOrganisms();
 	void spawnOrganisms();
+	bool extinctionEvent(int human, int zombies);
 
 private:
 	City* city;

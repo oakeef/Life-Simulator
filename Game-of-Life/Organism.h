@@ -11,6 +11,7 @@ protected:
 	int _y;
 	City* _city;
 	int moves[4][2] = { { 1,0 },{ -1,0 },{ 0,1 },{ 0,-1 } };
+	int shuffledMoves[4][2] = { { 1,0 },{ -1,0 },{ 0,1 },{ 0,-1 } };
 	
 
 public:
